@@ -1,9 +1,9 @@
 <?php
 
-namespace OptimistDigital\NovaNotesField\Traits;
+namespace Jam0r85\NovaNotesField\Traits;
 
 use Illuminate\Support\Facades\Auth;
-use OptimistDigital\NovaNotesField\Models\Note;
+use Jam0r85\NovaNotesField\Models\Note;
 
 trait HasNotes
 {
@@ -13,7 +13,7 @@ trait HasNotes
      * @param string $note The note text which can contain raw HTML.
      * @param bool $user Enables or disables the use of `Auth::user()` to set as the creator.
      * @param bool $system Defines whether the note is system created and can be deleted or not.
-     * @return \OptimistDigital\NovaNotesField\Models\Note
+     * @return \Jam0r85\NovaNotesField\Models\Note
      **/
     public function addNote($note, $user = true, $system = true)
     {

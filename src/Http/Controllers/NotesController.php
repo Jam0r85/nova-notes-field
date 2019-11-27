@@ -1,6 +1,6 @@
 <?php
 
-namespace OptimistDigital\NovaNotesField\Http\Controllers;
+namespace Jam0r85\NovaNotesField\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller;

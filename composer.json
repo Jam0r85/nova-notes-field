@@ -1,5 +1,5 @@
 {
-  "name": "optimistdigital/nova-notes-field",
+  "name": "jam0r85/nova-notes-field",
   "description": "This Laravel Nova package adds a notes field to Nova's arsenal of fields.",
   "keywords": [
     "laravel",
@@ -9,14 +9,9 @@
   ],
   "authors": [
     {
-      "name": "Tarvo Reinpalu",
-      "email": "tarvoreinpalu@gmail.com",
+      "name": "James Morris",
+      "email": "jam0r@me.com",
       "role": "Developer"
-    },
-    {
-      "name": "Optimist Digital",
-      "email": "info@optimistdigital.com",
-      "role": "Maintainer"
     }
   ],
   "license": "MIT",
@@ -25,13 +20,13 @@
   },
   "autoload": {
     "psr-4": {
-      "OptimistDigital\\NovaNotesField\\": "src/"
+      "Jam0r85\\NovaNotesField\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "OptimistDigital\\NovaNotesField\\FieldServiceProvider"
+        "Jam0r85\\NovaNotesField\\FieldServiceProvider"
       ]
     }
   },

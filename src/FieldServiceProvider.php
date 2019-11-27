@@ -1,6 +1,6 @@
 <?php
 
-namespace OptimistDigital\NovaNotesField;
+namespace Jam0r85\NovaNotesField;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;

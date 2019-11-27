@@ -1,6 +1,6 @@
 <?php
 
-namespace OptimistDigital\NovaNotesField\Models;
+namespace Jam0r85\NovaNotesField\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;

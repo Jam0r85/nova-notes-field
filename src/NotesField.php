@@ -1,6 +1,6 @@
 <?php
 
-namespace OptimistDigital\NovaNotesField;
+namespace Jam0r85\NovaNotesField;
 
 use Laravel\Nova\Fields\Field;
 
@@ -14,7 +14,7 @@ class NotesField extends Field
      * Sets the placeholder value displayed on the field.
      *
      * @param string $placeholder
-     * @return \OptimistDigital\NovaNotesField\NotesField
+     * @return \Jam0r85\NovaNotesField\NotesField
      **/
     public function placeholder($placeholder)
     {
