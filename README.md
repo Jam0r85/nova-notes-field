@@ -18,7 +18,7 @@ This [Laravel Nova](https://nova.laravel.com) package adds a notes field to Nova
 
 ```bash
 # Install the package via Composer
-composer require optimistdigital/nova-notes-field
+composer require jam0r85/nova-notes-field
 
 # Run automatically loaded migration(s)
 php artisan migrate
