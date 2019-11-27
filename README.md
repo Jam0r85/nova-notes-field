@@ -80,3 +80,4 @@ public function addNote($note, $user = true, $system = true)
 ## License
 
 This project is open-sourced software licensed under the [MIT license](LICENSE.md).
+# nova-notes-field
