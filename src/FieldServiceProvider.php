@@ -32,7 +32,7 @@ class FieldServiceProvider extends ServiceProvider
 
         Route::middleware(['nova'])
             ->prefix('nova-vendor/nova-notes')
-            ->namespace('\OptimistDigital\NovaNotesField\Http\Controllers')
+            ->namespace('\Jam0r85\NovaNotesField\Http\Controllers')
             ->group(__DIR__ . '/../routes/api.php');
     }
 
