@@ -1,5 +1,5 @@
 <template>
-  <div class="w-3/5 mb-4 flex">
+  <div class="w-3/5 p-4 flex">
     <textarea
       rows="3"
       :placeholder="placeholder"

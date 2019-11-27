@@ -1,11 +1,5 @@
 <template>
   <div :class="classes">
-    <note-input
-      v-model.trim="note"
-      @onSubmit="createNote"
-      :loading="loading"
-      :placeholder="field.placeholder || field.name"
-    />
 
     <note
       v-for="note in notesToShow"
@@ -21,6 +15,13 @@
         @click="maxToShow = void 0"
       >Show all notes ({{ notes.length - maxToShow }} more)</span>
     </div>
+
+    <note-input
+      v-model.trim="note"
+      @onSubmit="createNote"
+      :loading="loading"
+      :placeholder="field.placeholder || field.name"
+    />
 
     <delete-note-confirmation-modal
       v-if="showDeleteConfirmation"
@@ -64,7 +65,7 @@ export default {
       return this.maxToShow && this.notes.length > this.maxToShow;
     },
     classes() {
-      const defaultClasses = 'notes-field px-4 pt-4 pb-2 rounded-b-lg overflow-hidden border-b border-40';
+      const defaultClasses = 'notes-field overflow-hidden';
       return defaultClasses + (this.extraClass ? ` ${this.extraClass}` : '');
     },
   },
