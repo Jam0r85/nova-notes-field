@@ -1,5 +1,5 @@
 <template>
-  <notes-field :field="field" :resourceName="resourceName" :resourceId="resourceId" :extraClass="'-mx-6 -my-px border-t'" />
+  <notes-field :field="field" :resourceName="resourceName" :resourceId="resourceId" :extraClass="'-mx-6 -my-px'" />
 </template>
 
 <script>

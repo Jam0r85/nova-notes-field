@@ -1,6 +1,8 @@
 # Nova Notes Field
 
-This [Laravel Nova](https://nova.laravel.com) package adds a notes field to Nova's arsenal of fields.
+This package is based on the original Nova Notes Field package by [Tarvo Reinpalu](https://github.com/Tarpsvo).
+
+All credit goes to Tarvo Reinpalu for creating a fantastic addition to Nova. The core features of the original package are the same however there are some layout tweaks and I hope to add additional features such as stuck/important notes, latest note cards, etc.
 
 ## Features
 
@@ -9,10 +11,6 @@ This [Laravel Nova](https://nova.laravel.com) package adds a notes field to Nova
 - Ability to add notes through the UI or programmatically
 - Ability to delete user-made notes (w/ confirmation modal)
 - Customizable placeholder support
-
-## Screenshots
-
-![Detail view](docs/detail.png)
 
 ## Installation
 
@@ -29,7 +27,7 @@ php artisan migrate
 Add `HasNotes` trait to the model that has the notes:
 
 ```php
-use OptimistDigital\NovaNotesField\Traits\HasNotes;
+use Jam0r85\NovaNotesField\Traits\HasNotes;
 
 class ExampleModel extends Model
 {
@@ -40,7 +38,7 @@ class ExampleModel extends Model
 Add `NotesField` to the matching resource:
 
 ```php
-use OptimistDigital\NovaNotesField\NotesField;
+use Jam0r85\NovaNotesField\NotesField;
 
 class SomeResource extends Resource
 {
@@ -68,7 +66,7 @@ To add notes programmatically, use the method provided by the `HasNotes` trait:
  * @param string $note The note text which can contain raw HTML.
  * @param bool $user Enables or disables the use of `Auth::user()` to set as the creator.
  * @param bool $system Defines whether the note is system created and can be deleted or not.
- * @return \OptimistDigital\NovaNotesField\Models\Note
+ * @return \Jam0r85\NovaNotesField\Models\Note
  **/
 public function addNote($note, $user = true, $system = true)
 ```
