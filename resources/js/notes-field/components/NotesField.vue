@@ -1,6 +1,14 @@
 <template>
   <div :class="classes">
 
+    <div v-if="notes.length == 0" class="flex justify-center items-center px-6 py-8">
+      <div class="text-center">        
+        <h3 class="text-base text-80 font-normal mb-6">
+          No notes have been made.
+        </h3>
+      </div>
+    </div>
+
     <note
       v-for="note in notesToShow"
       :note="note"

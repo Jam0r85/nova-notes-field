@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full p-4 flex border-b mb-2">
+  <div class="w-full p-4 flex border-b border-40 mb-2">
     <div class="rounded-full w-12 h-12 mr-3 overflow-hidden text-center">
       <!-- Image -->
       <img class="w-12 h-12" v-if="note.created_by_avatar_url" :src="note.created_by_avatar_url" alt="">
