@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full flex flex-no-wrap items-center justify-between p-4">
+  <div class="w-full flex flex-no-wrap items-center justify-between p-4 border-b border-40">
 
     <!-- Left Side -->
-    <div class="w-full flex border-b border-40">
+    <div class="w-full flex">
 
       <div class="rounded-full w-12 h-12 mr-3 overflow-hidden text-center">
         <!-- Image -->
