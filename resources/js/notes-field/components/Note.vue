@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex items-center justify-between">
+  <div class="w-full flex flex-no-wrap items-center justify-between">
 
     <!-- Left Side -->
     <div class="w-full p-4 flex border-b border-40">
