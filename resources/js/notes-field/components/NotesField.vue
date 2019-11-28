@@ -1,14 +1,16 @@
 <template>
   <div :class="classes">
 
+    <!-- No Notes Made Warning -->
     <div v-if="notes.length == 0" class="flex justify-center items-center px-6 py-8 border-b border-40">
       <div class="text-center">        
-        <h3 class="text-base text-80 font-normal mb-6">
+        <h3 class="text-base text-80 font-normal">
           No notes have been made.
         </h3>
       </div>
     </div>
 
+    <!-- Notes -->
     <note
       v-for="note in notesToShow"
       :note="note"
@@ -73,7 +75,7 @@ export default {
       return this.maxToShow && this.notes.length > this.maxToShow;
     },
     classes() {
-      const defaultClasses = 'notes-field overflow-hidden';
+      const defaultClasses = 'notes-field overflow-hidden border-t border-40';
       return defaultClasses + (this.extraClass ? ` ${this.extraClass}` : '');
     },
   },
